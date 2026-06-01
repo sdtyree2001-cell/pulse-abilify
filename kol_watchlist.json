@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Add your first KOL name here",
+    "title": "e.g. Professor of Psychiatry",
+    "affiliation": "e.g. Harvard / MGH",
+    "relevance": "e.g. MDD treatment algorithms, aripiprazole augmentation",
+    "notes": "e.g. Frequent APA guideline contributor"
+  },
+  {
+    "name": "Add your second KOL name here",
+    "title": "e.g. Clinical Psychopharmacologist",
+    "affiliation": "e.g. Yale / CT",
+    "relevance": "e.g. MDD adjunctive therapy commentary",
+    "notes": "e.g. Often quoted on antidepressant augmentation"
+  }
+]

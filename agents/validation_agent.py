@@ -82,8 +82,8 @@ def _verify_signal(client: anthropic.Client, signal: dict[str, Any], topic: str)
         response = client.messages.stream(
             model=MODEL_NAME,
             tools=WEB_SEARCH_TOOL,
-            max_tokens_to_sample=MAX_TOKENS,
-            message=[{"role": "user", "content": prompt}],
+            max_tokens=MAX_TOKENS,
+            messages=[{"role": "user", "content": prompt}],
         )
         output_text = ""
         for event in response:

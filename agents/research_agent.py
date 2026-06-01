@@ -85,8 +85,8 @@ def run_research(client: anthropic.Client, topics: list[str] | None = None) -> l
             response = client.messages.stream(
                 model=MODEL_NAME,
                 tools=WEB_SEARCH_TOOL,
-                max_tokens_to_sample=MAX_TOKENS,
-                message=[
+                max_tokens=MAX_TOKENS,
+                messages=[
                     {
                         "role": "user",
                         "content": prompt,

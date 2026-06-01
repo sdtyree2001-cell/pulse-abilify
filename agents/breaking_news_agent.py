@@ -130,8 +130,8 @@ def run_breaking_news_agent(client: anthropic.Client) -> int:
         response = client.messages.stream(
             model=MODEL_NAME,
             tools=WEB_SEARCH_TOOL,
-            max_tokens_to_sample=MAX_TOKENS,
-            message=[{"role": "user", "content": prompt}],
+            max_tokens=MAX_TOKENS,
+            messages=[{"role": "user", "content": prompt}],
         )
         raw_text = ""
         for event in response:

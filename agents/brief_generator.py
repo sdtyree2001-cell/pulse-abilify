@@ -29,13 +29,18 @@ def _build_prompt(topic: str, signals: list[dict[str, Any]]) -> str:
 def _ask_for_narrative(client: anthropic.Client, topic: str, signals: list[dict[str, Any]]) -> str:
     prompt = _build_prompt(topic, signals)
     try:
-        response = client.responses.create(
+        response = client.messages.create(
             model=MODEL_NAME,
-            max_tokens_to_sample=MAX_TOKENS,
-            input=prompt,
+            max_tokens=MAX_TOKENS,
+            messages=[{"role": "user", "content": prompt}],
         )
-        output_text = response.output[0].content[0].text
-        return output_text.strip()
+        def _extract_text(block: Any) -> str:
+            if isinstance(block, dict):
+                return str(block.get("text", ""))
+            return str(getattr(block, "text", ""))
+
+        output_text = "".join(_extract_text(block) for block in getattr(response, "content", []))
+        return output_text.strip() if output_text else "No narrative available due to generation error."
     except Exception as exc:
         print(f"WARNING: Narrative generation failed for topic {topic}: {exc}")
         return "No narrative available due to generation error."

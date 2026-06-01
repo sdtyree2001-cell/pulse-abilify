@@ -1,16 +1,38 @@
 [
   {
-    "name": "Add your first KOL name here",
-    "title": "e.g. Professor of Psychiatry",
-    "affiliation": "e.g. Harvard / MGH",
-    "relevance": "e.g. MDD treatment algorithms, aripiprazole augmentation",
-    "notes": "e.g. Frequent APA guideline contributor"
+    "name": "Helen Mayberg, MD",
+    "title": "Neurologist and Neuroscientist",
+    "affiliation": "Icahn School of Medicine at Mount Sinai / NY",
+    "relevance": "Globally renowned for mapping depression circuits in the brain and discovering biomarkers used to guide treatments like Deep Brain Stimulation (DBS) for severe, treatment resistant MDD",
+    "notes": "e.g. Often quoted on antidepressant augmentation"
   },
   {
-    "name": "Add your second KOL name here",
-    "title": "e.g. Clinical Psychopharmacologist",
-    "affiliation": "e.g. Yale / CT",
-    "relevance": "e.g. MDD adjunctive therapy commentary",
+    "name": "Nolan Williams, MD",
+    "title": "Associate Professor",
+    "affiliation": "Stanford University / CA",
+    "relevance": "Developed the Stanford Accelerated Intelligent Neuromodulation Therapy (SAINT), a highly personalized, accelerated TMS protocol for treatment-resistant depression",
+    "notes": "e.g. Often quoted on antidepressant augmentation"
+  },
+ {
+    "name": "Raymond Lam, MD",
+    "title": "Professor of Psychiatry",
+    "affiliation": "University of British Columbia / Canada",
+    "relevance": "Leading expert in clinical trials for new antidepressants and the development of clinical guidelines for MDD",
+    "notes": "e.g. Often quoted on antidepressant augmentation"
+  },
+  {
+    "name": "Maurizio Fava, MD",
+    "title": "Psychiatrist-in-Chief",
+    "affiliation": "Massachusetts General Hospital / MA",
+    "relevance": "He one of the world's foremost clinical researchers on treatment-resistant depression and experimental therapeutics",
+    "notes": "e.g. Often quoted on antidepressant augmentation"
+  }, 
+   {
+    "name": "Carlos Zarate, MD",
+    "title": "Chief of the Section on Neurobiology and Treatment of Mood Disorders",
+    "affiliation": "National Institute of Mental Health / MD",
+    "relevance": "His work has been instrumental in evaluating the rapid antidepressant effects of ketamine and other novel glutamatergic modulators",
     "notes": "e.g. Often quoted on antidepressant augmentation"
   }
 ]
+
